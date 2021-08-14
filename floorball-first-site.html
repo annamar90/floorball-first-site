@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="eng">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> The fastest game ever ✨ </title>
+
+    <style>
+        body {
+            background:linear-gradient(180.3deg, rgb(221, 221, 221) 5.5%, rgb(110, 136, 161) 90.2%); linear-gradient(180.3deg, rgb(221, 221, 221) 5.5%, rgb(110, 136, 161) 90.2%);
+        }
+
+        .icon {
+            text-align: center;
+            font-size: 0.5em;
+            margin: 20px;
+        }
+
+        .description {
+            max-width: 40%;
+            margin: 0 auto;
+            padding-top: 1em;
+            font-family: Verdana;
+            line-height: 1.5em;
+        }
+
+        .structure {
+            text-align: center;
+        }
+
+        .iff {
+            padding-top: 1em;
+            display: block;
+            font-family: Verdana;
+            font-weight: normal;
+            font-size: 0.9em;
+            color: #0F044C;
+
+        }
+
+        .contacts {
+            font-family: Verdana;
+            font-size: 1em;
+            color: black;
+            margin-top: 20px;
+        }
+
+        .separator {
+            max-width: 50%;
+        }
+
+        .signature {
+            font-family: 'Calibri';
+            font-style: italic;
+            font-size: 0.7em;
+        }
+
+        h1 {
+            color:#141E61;
+            font-size: 38px;
+            font-family: 'Sora', sans-serif;
+            text-align: center;
+            font-weight: 400;
+            margin-bottom: 10px;
+        }
+
+        img {
+            display: block;
+            margin: 0 auto;
+            max-width: 30%;
+            border-radius: 10px;
+        }
+
+        h2 {
+            color:#0F044C;
+            font-size: 50px;
+            font-family: 'Sora', sans-serif;
+            text-align: center;
+            font-weight: 700;
+            margin-top: 5px;
+        }
+
+        button {
+            display: block;
+            margin: 0 auto;
+            margin-top: 2em;
+            padding: 5px;
+            background:#141E61;
+            color: #EEEEEE;
+            font-size: 14px;
+            border: 0.5px solid #141E61;
+            border-radius: 30px;
+            box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+            transition: all 150ms ease-in-out;
+            font-family: 'Sora';
+            font-weight: normal;
+            width: 200px;
+            height: 35px;
+        }
+
+        a:hover {
+            color: #EEEEEE;
+            font-weight: normal;
+            cursor: pointer;
+        }
+
+        button:hover {
+            font-weight: bold;
+            cursor: pointer;
+            background: #EEEEEE;
+            color: #141E61;
+        }
+    </style>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;700&display=swap" rel="stylesheet">
+
+</head>
+
+
+<body>
+
+    <div class="structure">
+
+
+        <h1>
+            Need a new hobby?
+        </h1>
+
+
+        <h2>
+            <strong>Try floorball!</strong>
+
+            <p class="icon">
+                🏒
+            </p>
+        </h2>
+
+
+        <img src="https://dltaw1vhj9zy5.cloudfront.net/2019/10/W-POL-NOR-1973x1237.jpg" alt="Girls playing floorball" />
+
+
+        <p class="description">
+
+            ⭐<br>
+            <br>
+            Floorball is a <strong>fast</strong> and <strong>entertaining</strong> sport and the development has been
+            amazingly quick. <br>
+            <br>
+
+            🌎<br>
+            <br>
+            Since the first Floorball
+            federation was founded in Sweden, the sport has spread <strong>all over the world</strong>. <br>
+            <br>
+
+            🏆<br>
+            <br>
+            It is now played in <strong>over 80 countries </strong>
+            out of which close to 75 countries currently are members of the <br>
+            <span style="color: #0F044C"> <em>International Floorball Federation (IFF)</em></span>.
+        </p>
+
+        <br>
+        💻
+        <a href="https://floorball.sport/this-is-floorball/floorball-in-a-nutshell" target="_blank" class="iff">
+            Learn more on the IFF website
+        </a>
+
+        <br>
+        <p class="contacts">
+            🙌
+            <br>
+
+            <strong>Wanna give it a try?</strong> <br>
+
+            <br>
+
+            Contact us and get in touch with your nearest club 😃
+        </p>
+
+
+        <button>
+            Help me find a club!
+        </button>
+
+        <hr class="separator">
+
+        <p class="signature">
+            Coded by Anna Marasso
+        </p>
+
+    </div>
+
+
+    <script>
+
+        function help() {
+            let name = prompt("What is your name?");
+            let country = prompt("Where are you from?");
+            let email = prompt("What is your e-mail address?");
+
+            if (email.match('@')) {
+                alert("Thank you, " + name + "! We'll be in touch soon 🤗 ");
+            } else {
+                alert("Sorry, invalid e-mail address 😥 ")
+            }
+
+        }
+
+
+        let helpButton = document.querySelector("button");
+        helpButton.addEventListener("click", help);
+
+    </script>
+</body>
+
+
+
+</html>
